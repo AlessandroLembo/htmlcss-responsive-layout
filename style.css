@@ -1,0 +1,25 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 80px;
+    color: black;
+    background-color: white;
+}
+
+header{
+    background-color: dodgerblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+}
+
