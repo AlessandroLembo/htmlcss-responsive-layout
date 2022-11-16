@@ -56,14 +56,54 @@ img{
 
 /* Main */
 /* first section 5 cards */
+.operations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card{
     min-height: 500px;
     background-color: lightblue;
     border: 2px dashed red;
     margin-bottom: 30px;
+    flex-basis: 100%;
 }
 
-.card:first-child{
-    /* min-height: 800px; */
+.large-card{
+    min-height: 800px;
+    background-color: lightblue;
+    border: 2px dashed red;
+    margin-bottom: 30px;
+    flex-basis: 100%;
 }
+
+.content-card{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*********************
+  TABLET RESPONSIVE
+  ********************/
+@media  screen and (min-width:577px) {
+    .operations{
+        justify-content: space-between;
+    }
+
+    .large-card{
+        flex-basis: calc((95% / 3) * 2);
+        min-height: 500px;
+    }
+
+    .card{
+        flex-basis: calc(95% / 3);
+    }
+    
+}
+
+/*********************
+  DESKTOP RESPONSIVE
+  ********************/
+
 
