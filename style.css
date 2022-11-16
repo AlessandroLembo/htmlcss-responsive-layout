@@ -164,10 +164,39 @@ img{
     text-align: center;
     line-height: 40px;
 }
+
+
+/* third section expert partners */
+.card-partners{
+    min-height: 600px;
+    border: 2px dashed red;
+    margin-bottom: 1rem;
+    background-color: #bf80ff;
+    width: 100%;
+}
+
+.expert-partners p{
+    color: black;
+}
+
+.head-partners *{
+    padding-bottom: 20px;
+}
+
+.card-partners p, h3{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
 /*********************
   TABLET RESPONSIVE
   ********************/
 @media  screen and (min-width:577px) {
+
+    /* first section tablet media quesry */
     .operations{
         justify-content: space-between;
     }
@@ -184,6 +213,8 @@ img{
         height: 350px;
     }
 
+    
+    /*second section tablet media quesry */
     .content-planning{
         display: flex;
         flex-direction: column;
@@ -204,12 +235,22 @@ img{
         align-items: center;
     }
 
+    /* third section tablet media quesry */
+    .card-partners{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 200px;
+    }
+
 }
 
 /*********************
   DESKTOP RESPONSIVE
   ********************/
 @media screen and (min-width: 1200px) {
+
     .container{
         width: 100%;
     }
@@ -217,6 +258,7 @@ img{
         width: 65%;
     }
     
+    /* Header media query */
     .nav-bar{
         display: block;
     }
@@ -224,7 +266,8 @@ img{
     .fa-bars{
         display: none;
     }
-
+    
+    /* first section desktop media quesry */
     .card{
          height: 250px;
     }
@@ -233,6 +276,7 @@ img{
          height: 250px;
     }
     
+    /* second section desktop media query */
     .content-planning{
         display: flex;
         flex-direction: row;
@@ -259,6 +303,8 @@ img{
         line-height: 30px;
         padding: 3px; 
     }
+
+    /* third section desktop media query */
     
 }
 
