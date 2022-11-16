@@ -147,7 +147,7 @@ img{
 }
 
 .violet-container *{
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .planning-card p{
@@ -198,6 +198,12 @@ img{
         width: 100%;
     }
 
+    .strategic-planning{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 /*********************
@@ -207,7 +213,6 @@ img{
     .container{
         width: 100%;
     }
-
     .mini-container{
         width: 65%;
     }
@@ -227,5 +232,33 @@ img{
     .large-card{
          height: 250px;
     }
+    
+    .content-planning{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .planning-card{
+        min-height: 200px;
+    }
+
+    .violet-container *{
+        padding: 10px;
+    }
+
+    .planning-card p{
+        font-size: 15px;
+    }
+
+    .fa-arrow-down{
+        font-size: 15px;
+        width: 35px;
+        height: 35px;
+        line-height: 30px;
+        padding: 3px; 
+    }
+    
 }
 
