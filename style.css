@@ -24,23 +24,6 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/*
-header{
-    background-color: #0084fd;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.wrapper{
-    height: calc(100vh - 60px);
-    overflow-y: auto; 
-}
-*/
-
 .header{
     height: 60px;
     position: sticky;
@@ -57,9 +40,26 @@ header{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 /* Utils */
+img{
+    height: 150px;
+}
+
+header img{
+    height: 50px;
+}
+
+.operations img{
+    height: 200px;
+}
+
+.planning img{
+    height: 400px;
+}
+
 
 /* Header */
 .logo-flex{
@@ -67,6 +67,7 @@ img{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 1rem;
 }
 
 .fa-bars{
@@ -212,6 +213,20 @@ img{
     
 }
 
+/* fifth section About us */
+.text-aboutus p{
+    color: black;
+    line-height: 2rem;
+}
+
+.text-aboutus h2{
+    color: #9792e4;
+}
+
+.about-us *{
+    margin-bottom: 1rem;
+}
+
 
 /*********************
   TABLET RESPONSIVE
@@ -269,7 +284,7 @@ img{
         min-height: 200px;
     }
 
-    /* fourth section Benefits media query */
+    /* fourth section tablet media query */
     .row{
         display: flex;
         flex-wrap: wrap;
@@ -279,20 +294,48 @@ img{
         flex-basis: 50%;
     }
 
+    /* fifth section tablet media query */
+    .about-us{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .about-us > *{
+        padding: 2rem;
+    }
+
+    .text-aboutus{
+        flex-basis: 55%;
+        height: 500px;
+    }
+
+    .img-aboutus{
+        flex-basis: 45%;
+    }
+
 }
 
 /*********************
   DESKTOP RESPONSIVE
   ********************/
 @media screen and (min-width: 1200px) {
+    .container{
+        max-width: 100%;
+    }
+    
     .mini-container{
-        max-width: 1499px;
+        max-width: 100%;
         padding: 0 3rem;
     }
     
     /* Header media query */
+    .logo-flex{
+        padding: 0.7rem 1rem;
+    }
+
     .nav-bar{
-        display: block;
+        display: flex;
     }
 
     .fa-bars{
