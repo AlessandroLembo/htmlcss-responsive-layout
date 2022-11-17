@@ -6,26 +6,25 @@
 }
 
 /* Generics */
-body{
-    padding-top: 80px;
-}
 
 .container{
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 1rem;
+}
+
+.header-container{
+    background-color: #0084fd;
 }
 
 .violet-container{
     background-color: #9792e4;
-    /* min-width: 576px; */
-    /* margin: 0 auto; */
 }
 
 .footer-container{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/*
 header{
     background-color: #0084fd;
     height: 60px;
@@ -40,10 +39,20 @@ header{
     height: calc(100vh - 60px);
     overflow-y: auto; 
 }
+*/
+
+.header{
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 1rem;
+}
 
 .mini-container{
     max-width: 576px;
-    border: 2px dashed red;
+    padding: 0 1rem;
 }
 
 img{
@@ -191,6 +200,18 @@ img{
     text-align: center;
 }
 
+/* fourth section Benefits */
+.column{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.benefits-card{
+    background-color: white;
+    min-height: 100px;
+    
+}
+
 
 /*********************
   TABLET RESPONSIVE
@@ -248,18 +269,25 @@ img{
         min-height: 200px;
     }
 
+    /* fourth section Benefits media query */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column{
+        flex-basis: 50%;
+    }
+
 }
 
 /*********************
   DESKTOP RESPONSIVE
   ********************/
 @media screen and (min-width: 1200px) {
-    .container{
-        padding: 0 3rem;
-    }
-
     .mini-container{
         max-width: 1499px;
+        padding: 0 3rem;
     }
     
     /* Header media query */
@@ -309,6 +337,11 @@ img{
     }
 
     /* third section desktop media query */
+
+    /* fourth section Benefits media query */
+    .column{
+        flex-basis: calc(100% / 3);
+    }
     
 }
 
