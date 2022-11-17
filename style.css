@@ -11,14 +11,15 @@ body{
 }
 
 .container{
-    min-width: 576px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .violet-container{
-    background-color: #bf80ff;
-    min-width: 576px;
-    margin: 0 auto;
+    background-color: #9792e4;
+    /* min-width: 576px; */
+    /* margin: 0 auto; */
 }
 
 .footer-container{
@@ -26,7 +27,7 @@ body{
 }
 
 header{
-    background-color: dodgerblue;
+    background-color: #0084fd;
     height: 60px;
     position: fixed;
     top: 0;
@@ -37,12 +38,12 @@ header{
 
 .wrapper{
     height: calc(100vh - 60px);
-    overflow-y: auto;
+    overflow-y: auto; 
 }
 
 .mini-container{
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 576px;
+    border: 2px dashed red;
 }
 
 img{
@@ -100,18 +101,18 @@ img{
 }
 
 .card{
-    height: 500px;
+    min-height: 100px;
     background-color: lightblue;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     margin-bottom: 30px;
     flex-basis: 100%;
     padding: 30px;
 }
 
 .large-card{
-    height: 800px;
+    min-height: 180px;
     background-color: lightblue;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     margin-bottom: 1rem;
     flex-basis: 100%; 
     padding: 30px;
@@ -125,8 +126,8 @@ img{
 
 /* second section Strategic Planning */
 .planning-card{
-    min-height: 800px;
-    border: 2px dashed red;
+    min-height: 180px;
+    /* border: 2px dashed red; */
     margin-bottom: 1rem;
     background-color: white;
     width: 100%;
@@ -160,7 +161,7 @@ img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #bf80ff;
+    background-color: #9792e4;
     text-align: center;
     line-height: 40px;
 }
@@ -168,10 +169,10 @@ img{
 
 /* third section expert partners */
 .card-partners{
-    min-height: 600px;
-    border: 2px dashed red;
+    min-height: 150px;
+    /* border: 2px dashed red; */
     margin-bottom: 1rem;
-    background-color: #bf80ff;
+    background-color: #9792e4;
     width: 100%;
 }
 
@@ -195,6 +196,9 @@ img{
   TABLET RESPONSIVE
   ********************/
 @media  screen and (min-width:577px) {
+    .mini-container{
+        max-width: 1199px;
+    }
 
     /* first section tablet media quesry */
     .operations{
@@ -250,12 +254,12 @@ img{
   DESKTOP RESPONSIVE
   ********************/
 @media screen and (min-width: 1200px) {
-
     .container{
-        width: 100%;
+        padding: 0 3rem;
     }
+
     .mini-container{
-        width: 65%;
+        max-width: 1499px;
     }
     
     /* Header media query */
