@@ -10,12 +10,11 @@
 body{
     font-family: "PT Sans", sans-serif;
 }
-
+/*
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    
-}
+}*/
 
 .header-container{
     background-color: #0084fd;
@@ -120,25 +119,23 @@ header img{
 .card{
     min-height: 100px;
     background-color: lightblue;
-    /* border: 2px dashed red; */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     flex-basis: 100%;
-    padding: 30px;
+    padding: 1rem;
 }
 
 .large-card{
     min-height: 180px;
     background-color: lightblue;
-    /* border: 2px dashed red; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     flex-basis: 100%; 
-    padding: 30px;
+    padding: 1rem;
 }
 
 .content-card{
-    width: 90%;
     height: 100%; 
     margin: 0 auto;
+    border: 2px solid red;
 }
 
 /* second section Strategic Planning */
@@ -200,7 +197,6 @@ header img{
 /* third section expert partners */
 .card-partners{
     min-height: 150px;
-    /* border: 2px dashed red; */
     margin-bottom: 1rem;
     background-color: #9792e4;
     width: 100%;
@@ -250,46 +246,42 @@ header img{
     font-size: 45px;
 }
 
-.about-us{
-    color: #9792e4;
-}
-
 .about-us *{
     padding-bottom: 1.5rem;
 }
 
 /* sixth section Price */
-   .price *{
+.price *{
     padding-bottom: 1.5rem;
     text-align: center;
 }
 
-   .transparent-title h2{
+.transparent-title h2{
     text-align: center;
     color: white;
     font-size: 50px;
     padding-bottom: 0;
 }
 
-   .price{
+.price{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-   .transparent-pricing h4{
+.transparent-pricing h4{
     padding-top: 3.5rem;
     color:rgba(255, 255, 255, 0.5);
     font-size: 25px;
 }
 
-   .transparent-pricing h1{
+.transparent-pricing h1{
     color:#ffbb33;
     font-size: 65px;
     font-weight: 800;
 }
 
-   .paragraph-freeprice{
+.paragraph-freeprice{
     width: 90%;
     margin: 0 auto;
     line-height: 1.5;
@@ -333,7 +325,7 @@ header img{
   ********************/
 @media  screen and (min-width:769px) {
     .mini-container{
-        max-width: 991px;
+        max-width: 100%;
     }
 
     /* first section tablet media quesry */
@@ -342,14 +334,14 @@ header img{
     }
 
     .large-card{
-        flex-basis: calc((100% / 3) * 2 - 2rem);
+        flex-basis: calc((100% / 3) * 2);
         height: 350px;
-        margin: 1rem;
+        /* margin: 1rem; */
     }
 
     .card{
-        flex-basis: calc((100% / 3) - 2rem);
-        margin: 1rem;
+        flex-basis: calc(100% / 3);
+        /* margin: 1rem; */
         height: 350px;
     }
 
@@ -389,7 +381,7 @@ header img{
     }
 
     /* fifth section tablet media query */
-    .about-us{
+    .our-job{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -446,26 +438,25 @@ header img{
   DESKTOP RESPONSIVE
   ********************/
 @media screen and (min-width: 992px) {
-    .container{
-        max-width: 100%;
-    }
-    
     .mini-container{
-        max-width: 100%;
-        padding: 0 3rem;
+        max-width: 70%;
+        /* padding: 0 1rem; */
+        margin: 0 auto;
     }
     
     /* Header media query */
-    .logo-flex{
-        padding: 0.7rem 1rem;
+    header{
+        height: 70px;
     }
 
     .nav-bar{
         display: flex;
+        height: 100%;
+        align-items: center;
     }
 
     .fa-bars{
-        display: none;
+        display: none;   
     }
     
     /* first section desktop media quesry */
