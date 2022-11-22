@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive_layout</title>
     <!--link Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +20,21 @@
   <div class="container header-container">
         <header>
           <div class="mini-container logo-flex">
-              <img src="img/logo.png" alt="Logo">
-              <i class="fa-solid fa-bars"></i>
-              <div class="nav-bar">
-                  <ul class="list-flex">
-                      <li><a href="#">Planning</a></li>
-                      <li><a href="#">Testimonials</a></li>
-                      <li><a href="#">Features</a></li>
-                      <li><a href="#">About us</a></li>
-                      <button class="btn-nav">Get Started</button>
-                  </ul>
-              </div>
+              <figure>
+                <img src="img/logo.png" alt="Logo">
+              </figure>
+              <a href="#">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <nav class="nav-bar">
+                <ul class="list-flex">
+                  <li><a href="#">Planning</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">About us</a></li>
+                </ul>
+                <button class="btn-nav">Get Started</button>
+              </nav>
           </div>
       </header>
    </div>
@@ -198,12 +202,17 @@
         </main>
 
         <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptas distinctio nesciunt, voluptatibus illum odio ut provident aut necessitatibus numquam mollitia aliquid facere dolore, ea eius, alias modi? Voluptates, totam.</p>
-            <a href="#">Lorem Ipsum</a>selerisque mauris pellentesque<a href="#">Boolean careers</a>
+          <div class="footer-container mini-container">
+            <div class="top-footer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptas distinctio nesciunt, voluptatibus illum odio ut provident aut necessitatibus numquam mollitia aliquid facere dolore, ea eius, alias modi? Voluptates, totam.</p>
+            </div>
+            <div class="bottom-footer">  
+              <a href="#">Lorem Ipsum</a>
+              <span>selerisque mauris pellentesque</span>
+              <a href="#">Boolean careers</a>
+            </div>    
+          </div>     
         </footer>
-            
-      
-   </div>
        
 </body>
 </html>
