@@ -61,6 +61,18 @@ header img{
     height: 350px;
 }
 
+.pdg-small{
+   padding-bottom: 1rem;
+}
+
+.mrg-small{
+    margin-bottom: 1rem;
+}
+
+.mrg-big{
+    margin-bottom: 3rem;
+}
+
 /* Header */
 .logo-flex{
     display: flex;
@@ -236,8 +248,7 @@ header img{
 }
 
 /* sixth section Price */
-.price *{
-    padding-bottom: 1.5rem;
+.price{
     text-align: center;
 }
 
@@ -245,7 +256,7 @@ header img{
     text-align: center;
     color: white;
     font-size: 50px;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 .price{
@@ -267,7 +278,6 @@ header img{
 }
 
 .paragraph-freeprice{
-    width: 90%;
     margin: 0 auto;
     line-height: 1.5;
     font-size: 30px;
@@ -283,7 +293,6 @@ header img{
 
 .copyright{
     color: white;
-    padding-top: 1rem;
 }
 
 .price a{
@@ -293,10 +302,6 @@ header img{
 
 .fa-circle{
     font-size: 10px;
-}
-
-.copyright div{
-    padding-bottom: 0;
 }
 
 /* Footer */
@@ -407,18 +412,27 @@ header img{
     }
 
     /* sixth section Price tablet media query */
+    .price-container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .transparent-pricing h4{
+        padding-top: 1rem;
+    }
+
     .transparent-title{
         display: flex;
         justify-content: center;
     }
 
     .transparent-title h2{
-        margin-right: 0.6rem;
+        margin-right: 0.6rem; 
     }
 
     .paragraph-freeprice{
-        width: 70%;
-        margin: 0 auto;
+        width: 80%; 
+        margin: 0 auto; 
         line-height: 1.5;
         font-size: 20px;
     }
@@ -486,7 +500,7 @@ header img{
     }
 
     .violet-container *{
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .planning-card p{
@@ -509,21 +523,17 @@ header img{
     }
     
     /* sixth section desktop media query */
-    .desktop-wrapper{
-        max-width: 65%;
+    .price-container{
+        max-width: 60%;
         margin: 0 auto;
-    }
-    
-    .copyright *{
-        padding: 2px;
-    } 
-
-    .paragraph-freeprice p{
-        font-size: 15px;
     }
 
     .transparent-title h2{
-        margin-right: 0;
+        font-size: 30px;
+    }
+    
+    .paragraph-freeprice p{
+        font-size: 15px;
     }
 
     /* footer desktop media query */
