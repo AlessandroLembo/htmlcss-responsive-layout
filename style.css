@@ -41,32 +41,27 @@ footer{
 
 img{
     max-width: 100%;
-    display: block;
 }
 
 /* Utils */
-img{
-    height: 200px;
-}
-
-header img{
-    height: 50px;
-}
-
-.operations img{
-    height: 250px;
-}
-
-.planning img{
-    height: 350px;
-}
-
 .pdg-small{
    padding-bottom: 1rem;
 }
 
+.pdg-md{
+    padding-bottom: 2rem;
+}
+
+.pdg-big{
+    padding-bottom: 3rem;
+}
+
 .mrg-small{
     margin-bottom: 1rem;
+}
+
+.mrg-md{
+    margin-bottom: 2rem;
 }
 
 .mrg-big{
@@ -113,7 +108,6 @@ header img{
     border: none;
 }
 
-
 /* Main */
 /* first section 5 cards */
 .operations{
@@ -145,30 +139,34 @@ header img{
 
 /* second section Strategic Planning */
 .content-planning{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 2rem;
 }
 
-.content-planning h2, p{
-    color: white;
-    /* text-align: left; */
-    /* align-self: flex-start; */
+.content-planning figure{
+    width: 350px;
+    height: 350px;
 }
 
 .strategic-planning{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4rem;
+}
+
+.strategic-planning h2, p{
+    color: white;
+    align-self: flex-start;
 }
 
 .planning-card{
-    min-height: 180px;
     margin-bottom: 1rem;
     background-color: white;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .planning h2{
@@ -196,22 +194,57 @@ header img{
 
 
 /* third section expert partners */
-.card-partners{
-    min-height: 150px;
-    margin-bottom: 1rem;
-    background-color: #9792e4;
-    width: 100%;
+.head-partners{
+    padding-top: 2rem;
 }
 
-.expert-partners p{
-    color: black;
-}
-
-.card-partners p, h3{
-    color: white;
-    font-size: 30px;
-    padding-bottom: 25px;
+.head-partners *{
     text-align: center;
+}
+
+.head-partners p{
+    color: black; 
+}
+
+.head-partners h2{
+    color: #9792e4;
+    font-size: 40px;
+}
+
+.expert-testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9792e4;
+    padding: 1rem; 
+    border-radius: 30px;
+}
+
+.expert-profile{
+    width: 200px;
+    height: 200px;
+}
+
+.expert-profile img{
+    border-radius: 50%;
+    height: 100%;
+}
+
+.partner-text{
+    margin-left: 1rem;
+}
+
+.partner-text p, h3{
+    color: white;
+    text-align: center;
+}
+
+.partner-text p{
+    font-size: 20px;
+}
+
+.partner-text h3{
+    font-size: 25px;
 }
 
 /* fourth section Benefits */
@@ -238,13 +271,30 @@ header img{
     line-height: 2rem;
 }
 
+.about-us h2{
+    color: #9792e4;
+}
+
 .text-aboutus h2{
-    padding: 3rem 0;
+    padding: 3rem 0 1rem;
     font-size: 45px;
 }
 
-.about-us *{
-    padding-bottom: 1.5rem;
+.testimonial{
+    width: 200px;
+    height: 200px;
+}
+
+.testimonial img{
+    border-radius: 50%;
+}
+
+.find-me{
+    background-color: #9792e4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
 }
 
 /* sixth section Price */
@@ -256,7 +306,6 @@ header img{
     text-align: center;
     color: white;
     font-size: 50px;
-    /* padding-bottom: 0; */
 }
 
 .price{
@@ -329,7 +378,7 @@ header img{
   ********************/
 @media  screen and (min-width:769px) {
     .mini-container{
-        max-width: 100%;
+        max-width: 100%; 
     }
 
     /* first section tablet media quesry */
@@ -340,38 +389,27 @@ header img{
     .large-card{
         flex-basis: calc((100% / 3) * 2);
         height: 350px;
-        /* margin: 1rem; */
     }
 
     .card{
         flex-basis: calc(100% / 3);
-        /* margin: 1rem; */
         height: 350px;
     }
 
     
     /*second section tablet media quesry */
-    .violet-container{
-        width: 100%;
+    .strategic-planning h2{
+        font-size: 55px;
     }
-
-    .planning-card{
-        width: 100%;
-    }
-
-    .strategic-planning{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+    
     /* third section tablet media quesry */
-    .card-partners{
-        width: 100%;
-        display: flex;
+    .expert-testimonials{
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        min-height: 200px;
+    }
+
+    .partner-text p, h3{
+        text-align: left;
     }
 
     /* fourth section tablet media query */
@@ -391,24 +429,24 @@ header img{
         align-items: flex-start;
     }
     
-    .about-us > *{
-        padding: 2rem;
-    }
-
-    .text-aboutus{
-        flex-basis: 55%;
-        /* height: 500px; */
+    .text-aboutus p{
+        font-size: 20px;
     }
 
     .img-aboutus{
-        flex-basis: 45%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-left: 2rem;
+    }
+    
+    .testimonial{
+        margin-bottom: 4rem;
     }
 
     .img-aboutus img{
-        margin: 3rem 0 0;
+        margin-top: 3rem;
+    }
+
+    .img-aboutus h2{
+        font-size: 25px;
     }
 
     /* sixth section Price tablet media query */
@@ -459,7 +497,6 @@ header img{
 @media screen and (min-width: 992px) {
     .mini-container{
         max-width: 70%;
-        /* padding: 0 1rem; */
         margin: 0 auto;
     }
     
@@ -478,13 +515,13 @@ header img{
         display: none;   
     }
     
-    /* first section desktop media quesry */
+    /* first section desktop media query */
     .card{
-         height: 250px;
+         min-height: 250px;
     }
 
     .large-card{
-         height: 250px;
+         min-height: 250px;
     }
     
     /* second section desktop media query */
@@ -494,13 +531,15 @@ header img{
         justify-content: center;
         align-items: flex-end;
     }
-
-    .planning-card{
-        min-height: 200px;
+    
+    .strategic-planning h2{
+        font-size: 40px;
+        margin-top: 5rem;
     }
 
-    .violet-container *{
-        /* padding: 10px; */
+    .planning-card{
+        padding: 2rem;
+        margin-left: 3rem;
     }
 
     .planning-card p{
@@ -514,8 +553,6 @@ header img{
         line-height: 30px;
         padding: 3px; 
     }
-
-    /* third section desktop media query */
 
     /* fourth section Benefits media query */
     .column{
